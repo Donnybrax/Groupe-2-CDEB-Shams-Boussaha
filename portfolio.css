@@ -1,0 +1,365 @@
+/* hero background image */
+.bgimage {
+    height: 100vh;
+    
+    background: url(Daft\ Punk\ Minimalism\ 4K.jpg);
+    background-size: cover;
+    position: relative;
+  
+}
+/* text css above hero image */
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+/* section à propos image css */
+.imageAboutPage {
+    width: 100%;
+}
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1.text-center {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* === SERVICES SECTION === */
+#services {
+  padding: 60px 0;
+  background-color: #e90e0e;
+}
+
+.servicesText {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicesText:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.servicesIcon {
+  font-size: 3rem;
+  color: #f70000; /* Green color */
+}
+
+.servicesText .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.servicesText .card-text {
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.servicesText .card-body {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* === PORTFOLIO SECTION === */
+#portfolio {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.portfolioContent {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolioContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.portfolioContent .card-img-top {
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolioContent .card-body {
+  padding: 20px;
+}
+
+.portfolioContent .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.portfolioContent .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.portfolioContent .text-center {
+  margin-top: 15px;
+}
+
+.portfolioContent .btn-success {
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.portfolioContent .btn-success:hover {
+  background-color: #218838;
+}
+
+/* === Responsive Adjustments === */
+
+
+@media (max-width: 767px) {
+  .servicesIcon {
+    font-size: 2.5rem;
+  }
+
+  h1.text-center {
+    font-size: 2rem;
+  }
+}
+
+
+/* Contact section */
+
+#contact {
+  background-color: #f8f9fa; /* fond gris clair */
+  padding: 60px 0;
+}
+
+.contactContent h1 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+#contact .form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+  border-color: #28a745; /* vert Bootstrap */
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+#contact .btn-success {
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+#contact iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive (facultatif) */
+@media (max-width: 768px) {
+  #contact iframe {
+    height: 300px;
+    width: 100%;
+  }
+
+  #contact .btn-success {
+    width: 100%;
+  }
+}
+
+/* Footer global */
+.footer {
+  background-color: #f5f5f5; /* gris clair, harmonisé avec #contact */
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* Réseaux sociaux */
+.social-icons a {
+  color: #333;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #28a745; /* vert Bootstrap pour cohérence */
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+}
+
+/* afficher la couleur de fond noire lors du défilement de la barre de navigation */
+.navbarScroll.navbarDark {
+  background-color: black;
+}
+/* From Uiverse.io by 0xnihilism */ 
+.card {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border: 6px solid #000;
+  box-shadow: 12px 12px 0 #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 17px 17px 0 #000;
+}
+
+.card__title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 3px;
+  background-color: #000;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.card:hover .card__title::after {
+  transform: translateX(0);
+}
+
+.card__content {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card__form input {
+  padding: 10px;
+  border: 3px solid #000;
+  font-size: 16px;
+  font-family: inherit;
+  transition: transform 0.3s;
+  width: calc(100% - 26px); /* Adjust for padding and border */
+}
+
+.card__form input:focus {
+  outline: none;
+  transform: scale(1.05);
+  background-color: #000;
+  color: #ffffff;
+}
+
+.card__button {
+  border: 3px solid #000;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  left: 20%;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 50%;
+  height: 100%;
+}
+
+.card__button::before {
+  content: "Sure?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105%;
+  background-color: #5ad641;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.card__button:hover::before {
+  transform: translateY(0);
+}
+
+.card__button:active {
+  transform: scale(0.95);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite;
+}
+
+
